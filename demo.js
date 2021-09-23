@@ -1,6 +1,7 @@
 import React from 'react';
 import { createTheme, ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import ButtonGroup from '@material-ui/core/Button';
 
 const theme = createTheme({
   props: {
@@ -18,6 +19,17 @@ function DefaultProps() {
       <Button color="secondary" variant="contained">
         Change default props
       </Button>
+      <Button color="primary" variant="contained">
+        Change default props
+      </Button>
+      <ButtonGroup variant="outlined" color="secondary">
+      <Button color="secondary" variant="contained">
+        Change default props
+      </Button>
+      <Button color="primary" variant="contained">
+        Change default props
+      </Button>
+      </ButtonGroup>
     </ThemeProvider>
   );
 }
